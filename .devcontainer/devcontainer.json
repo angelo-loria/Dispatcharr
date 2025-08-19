@@ -22,9 +22,9 @@
     "ghcr.io/devcontainers/features/docker-cli": {}
   },
   // If your environment requires privileged mode for Docker-in-Docker, uncomment runArgs below
-  // "runArgs": [
-  //   "--privileged"
-  // ],
+  "runArgs": [
+    "--privileged"
+  ],
   "forwardPorts": [9191, 5656, 8001, 3001, 6379],
   "workspaceFolder": "/workspace",
   "postCreateCommand": "python -m pip install --upgrade pip setuptools wheel && pip install -r requirements.txt || true && (cd frontend && npm ci) || true",
