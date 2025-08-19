@@ -17,6 +17,12 @@
       }
     }
   },
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:1": {
+      "version": "latest",
+      "moby": true
+    }
+  },
   // NOTE: The devcontainer previously attempted to enable docker-in-docker features.
   // Some environments (or unauthenticated GHCR access) can fail processing these features.
   // If you want automatic Docker support inside the container, enable Docker-in-Codespaces
