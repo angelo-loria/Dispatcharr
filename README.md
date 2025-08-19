@@ -1,4 +1,5 @@
 # 🎬 Dispatcharr — Your Ultimate IPTV & Stream Management Companion
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/Dispatcharr/Dispatcharr/refs/heads/main/frontend/src/images/logo.png" height="200" alt="Dispatcharr Logo" />
 </p>
@@ -37,7 +38,6 @@ Dispatcharr has officially entered **BETA**, bringing powerful new features and 
 
 ---
 
-
 # Screenshots
 
 ![image](https://github.com/user-attachments/assets/bf7bc40a-d0e6-4f9f-8029-65b27d4205f9)
@@ -49,9 +49,6 @@ Dispatcharr has officially entered **BETA**, bringing powerful new features and 
 ![image](https://github.com/user-attachments/assets/68a38d78-8f61-4c27-88f8-c52ba93d460d)
 
 ![image](https://github.com/user-attachments/assets/63686b9a-6faf-43a3-ae7a-c9e10a216b5b)
-
-
-
 
 # 🚀 Get Started in Minutes
 
@@ -74,11 +71,51 @@ docker run -d \
 
 | Use Case                    | File                                                    | Description                                                                                            |
 | --------------------------- | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| **All-in-One Deployment**   | [docker-compose.aio.yml](docker/docker-compose.aio.yml) | ⭐ Recommended! A simple, all-in-one solution — everything runs in a single container for quick setup.  |
+| **All-in-One Deployment**   | [docker-compose.aio.yml](docker/docker-compose.aio.yml) | ⭐ Recommended! A simple, all-in-one solution — everything runs in a single container for quick setup. |
 | **Modular Deployment**      | [docker-compose.yml](docker/docker-compose.yml)         | Separate containers for Dispatcharr, Celery, and Postgres — perfect if you want more granular control. |
 | **Development Environment** | [docker-compose.dev.yml](docker/docker-compose.dev.yml) | Developer-friendly setup with pre-configured ports and settings for contributing and testing.          |
 
 ---
+
+### 💻 Codespaces / Devcontainer
+
+If you're using GitHub Codespaces or VS Code's devcontainers, a `.devcontainer/` configuration is included to simplify setup.
+
+- Open the repository in a Codespace or "Reopen in Container" in VS Code.
+- The devcontainer installs Python, Node, and common tools and runs dependency installs in `postCreateCommand`.
+
+To run the full development stack (Django, Postgres, Redis, etc.) from inside the Codespace, use the helper script located at `.devcontainer/run-dev-stack.sh`.
+
+Examples (run from the repository root inside the Codespace):
+
+Start stack (foreground):
+
+```bash
+./.devcontainer/run-dev-stack.sh start
+```
+
+Start stack (detached):
+
+```bash
+./.devcontainer/run-dev-stack.sh start -d
+```
+
+Tail logs:
+
+```bash
+./.devcontainer/run-dev-stack.sh logs
+```
+
+Stop and clean up:
+
+```bash
+./.devcontainer/run-dev-stack.sh stop
+```
+
+Notes:
+
+- Codespaces may not provide a Docker daemon by default. If `docker` is not available inside the devcontainer, enable Docker-in-Codespaces or configure a remote Docker host.
+- The helper script performs basic checks and prints guidance when Docker isn't accessible.
 
 ### ⚒️ Building from Source (For the Adventurous)
 
@@ -103,7 +140,7 @@ Here’s how you can join the party:
 
 ## 📚 Roadmap & Documentation
 
-- 📚  **Roadmap:** Coming soon!
+- 📚 **Roadmap:** Coming soon!
 - 📖 **Documentation:** [Dispatcharr Docs](https://dispatcharr.github.io/Dispatcharr-Docs/)
 
 ---
@@ -129,8 +166,8 @@ For full license details, see [LICENSE](https://creativecommons.org/licenses/by-
 ## ✉️ Connect With Us
 
 Have a question? Want to suggest a feature? Just want to say hi?\
-➡️ **[Open an issue](https://github.com/Dispatcharr/Dispatcharr/issues)** or reach out on [Discord]( https://discord.gg/Sp45V5BcxU).
+➡️ **[Open an issue](https://github.com/Dispatcharr/Dispatcharr/issues)** or reach out on [Discord](https://discord.gg/Sp45V5BcxU).
 
 ---
 
-### 🚀 *Happy Streaming! The Dispatcharr Team*
+### 🚀 _Happy Streaming! The Dispatcharr Team_
