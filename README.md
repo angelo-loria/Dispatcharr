@@ -117,6 +117,10 @@ Notes:
 - Codespaces may not provide a Docker daemon by default. If `docker` is not available inside the devcontainer, enable Docker-in-Codespaces or configure a remote Docker host.
 - The helper script performs basic checks and prints guidance when Docker isn't accessible.
 
+Rebuilding the devcontainer:
+
+If you change devcontainer features (for example to enable Docker-in-Docker), rebuild the container in VS Code via: "Command Palette → Dev Containers: Rebuild Container" or use the Codespaces UI to rebuild.
+
 ### ⚒️ Building from Source (For the Adventurous)
 
 > ⚠️ **Warning**: Not officially supported — but if you're here, you know what you're doing!
